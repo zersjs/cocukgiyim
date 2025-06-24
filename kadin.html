@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadın Giyim - Eyüp Rate | Kızıltepe</title>
+    <meta name="description" content="Eyüp Rate kadın giyim koleksiyonu - Zarif ve modern kadın giyim seçenekleriyle gardırobunuzu yenileyin.">
+    <meta name="keywords" content="kadın giyim, hazır giyim, moda ürünleri">
+    <meta property="og:title" content="Kadın Hazır Giyim Ürünleri | boga">
+    <meta property="og:description" content="Boga, kadınlar için şık hazır giyim seçenekleri sunar. Kaliteli ürünlerimizle tarzınızı yansıtın. Her zevke uygun koleksiyonlarımızla alışveriş keyfini yaşayın.">
+    <meta property="og:url" content="https://bogaworld.com/kadin">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="boga">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kadın Hazır Giyim Ürünleri | boga">
+    <meta name="twitter:description" content="Boga, kadınlar için şık hazır giyim seçenekleri sunar. Kaliteli ürünlerimizle tarzınızı yansıtın. Her zevke uygun koleksiyonlarımızla alışveriş keyfini yaşayın.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 300ms;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        
+        .image-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .image-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Modern scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        /* Animation for fade-in */
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Mobile menu animations */
+        .mobile-menu {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 200px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex justify-between items-center">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-red-600">EYÜP RATE</a>
+                </div>
+                <div class="space-x-6 hidden md:block">
+                    <a href="index.html" class="text-gray-800 hover:text-red-600 font-medium">Ana Sayfa</a>
+                    <a href="erkek.html" class="text-gray-800 hover:text-red-600 font-medium">Erkek</a>
+                    <a href="kadin.html" class="text-gray-800 hover:text-red-600 font-medium">Kadın</a>
+                    <a href="cocuk.html" class="text-gray-800 hover:text-red-600 font-medium">Çocuk</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 hover:text-red-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden py-4 border-t">
+                <a href="index.html" class="block py-2 text-gray-800 hover:text-red-600 transition-colors">Ana Sayfa</a>
+                <a href="erkek.html" class="block py-2 text-gray-800 hover:text-red-600 transition-colors">Erkek</a>
+                <a href="kadin.html" class="block py-2 text-gray-800 hover:text-red-600 transition-colors">Kadın</a>
+                <a href="cocuk.html" class="block py-2 text-gray-800 hover:text-red-600 transition-colors">Çocuk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="parallax h-screen flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'); padding-top: 80px;">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">Kadın Giyim</h1>
+            <p class="text-xl mb-10 text-white max-w-2xl mx-auto">Zarif ve modern kadın giyim seçenekleriyle gardırobunuzu yenileyin.</p>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-red-600">Kadın Koleksiyonu</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover-scale">
+                    <div class="image-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Elegant dress" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">Zarif Elbiseler</h3>
+                        <p class="text-gray-600 mb-4">Özel günleriniz için sofistike ve şık elbise koleksiyonumuz.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Premium Kumaş</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover-scale">
+                    <div class="image-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=800" 
+                             alt="Casual blouse" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">Günlük Bluzlar</h3>
+                        <p class="text-gray-600 mb-4">İş ve günlük yaşam için konforlu ve şık bluz seçenekleri.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Rahat Kesim</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover-scale">
+                    <div class="image-card overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1685125885305-283d5dd0964f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Stylish pants" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">Şık Pantolonlar</h3>
+                        <p class="text-gray-600 mb-4">Modern kesim ve kaliteli kumaşlardan üretilen pantolon koleksiyonu.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Slim Fit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover-scale">
+                    <div class="image-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1627484817718-147731bb8909?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Evening wear" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">Gece Kıyafetleri</h3>
+                        <p class="text-gray-600 mb-4">Özel davetler için büyüleyici gece kıyafeti seçenekleri.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Lüks Tasarım</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover-scale">
+                    <div class="image-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800" 
+                             alt="Winter coat" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">Kış Montları</h3>
+                        <p class="text-gray-600 mb-4">Soğuk havalarda sıcaklık ve şıklığı bir arada sunan montlar.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Su Geçirmez</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover-scale">
+                    <div class="image-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1632537593914-c19c2716ffca?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Summer collection" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-red-600">Yaz Koleksiyonu</h3>
+                        <p class="text-gray-600 mb-4">Sıcak yaz günleri için ferah ve şık giyim seçenekleri.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Nefes Alan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-red-600">Neden Eyüp Rate?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-red-600">Trend Takipçisi</h3>
+                    <p class="text-gray-600">En güncel moda trendlerini takip ederek kadınların stilini yansıtan tasarımlar.</p>
+                </div>
+                
+                <div class="text-center bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-red-600">Mükemmel Kalite</h3>
+                    <p class="text-gray-600">Premium kumaşlar ve titiz işçilik ile üretilen uzun ömürlü giyim ürünleri.</p>
+                </div>
+                
+                <div class="text-center bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-red-600">Çok Yönlülük</h3>
+                    <p class="text-gray-600">İş hayatından sosyal etkinliklere kadar her ortam için uygun seçenekler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="parallax py-32 flex items-center justify-center relative" style="background-image: url('https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=2000');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white">Zarafetinizi Keşfedin</h2>
+            <p class="text-xl text-white max-w-3xl mx-auto mb-8">Kadın giyim koleksiyonumuzla kendinizi özel hissedin ve tarzınızı yansıtın.</p>
+            <a href="index.html#collections" class="bg-white text-red-600 px-8 py-3 rounded-md hover:bg-gray-100 transition-all font-medium">Diğer Koleksiyonlar</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-red-400">EYÜP ULUS NAK HAFR İNŞ PET SAN TİC LTD ŞTİ</h3>
+                    <div class="space-y-2 text-sm">
+                        <p>Sanayi Mah. Sok: 705 Site: Briz Yapı 1</p>
+                        <p>Apt Dış Kapı No: 2 İç Kapı No: 32</p>
+                        <p>Kızıltepe / Mardin</p>
+                        <div class="pt-2">
+                            <p><span class="font-medium">Tel:</span> +905415513306</p>
+                            <p><span class="font-medium">E-Posta:</span> eyup_nak@hotmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vergi Bilgileri -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-red-400">VERGİ BİLGİLERİ</h3>
+                    <div class="space-y-2 text-sm">
+                        <p>Vergi Dairesi: Kızıltepe Vergi Dairesi</p>
+                        <p>VKN: 3840363566</p>
+                    </div>
+                </div>
+                
+                <!-- Çalışma Saatleri -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-red-400">ÇALIŞMA SAATLERİ</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span>Pazartesi - Cumartesi:</span>
+                            <span>09:00 - 19:00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Pazar:</span>
+                            <span>Kapalı</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-2">Bülten</h4>
+                        <div class="flex">
+                            <input type="email" placeholder="E-posta adresinizi girin" class="px-3 py-2 rounded-l-lg focus:outline-none text-gray-800 text-sm flex-1">
+                            <button class="bg-red-600 px-4 py-2 rounded-r-lg hover:bg-red-700 text-sm">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Section -->
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-sm">© 2025 Eyüp Rate. Tüm hakları saklıdır.</p>
+                    </div>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="hover:text-red-400">Gizlilik Politikası</a>
+                        <a href="#" class="hover:text-red-400">Kullanım Şartları</a>
+                        <a href="#" class="hover:text-red-400">İade Politikası</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+        });
+        
+        // Animation on scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.animate-fade-in');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                
+                if (rect.top <= windowHeight * 0.8) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
